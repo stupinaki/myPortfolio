@@ -10,11 +10,11 @@ import BeeEnd  from "@/assets/bee-end.jpg";
 
 export const projectsCards = [
     {
-        id: 1,
-        projectName: 'Medical notes',
-        imgStart: MedicalNotesStart,
-        imgEnd: MedicalNotesEnd,
-        url: 'https://stupinaki.github.io/medical-notes/#/doctors',
+        id: 3,
+        projectName: 'Notab',
+        imgStart: NotabStart,
+        imgEnd: NotabEnd,
+        url: 'https://stupinaki.github.io/NOTAB/',
     },
     {
         id: 2,
@@ -24,11 +24,11 @@ export const projectsCards = [
         url: 'https://stupinaki.github.io/testSite/',
     },
     {
-        id: 3,
-        projectName: 'Notab',
-        imgStart: NotabStart,
-        imgEnd: NotabEnd,
-        url: 'https://stupinaki.github.io/NOTAB/',
+        id: 1,
+        projectName: 'Medical notes',
+        imgStart: MedicalNotesStart,
+        imgEnd: MedicalNotesEnd,
+        url: 'https://stupinaki.github.io/medical-notes/#/doctors',
     },
     {
         id: 4,

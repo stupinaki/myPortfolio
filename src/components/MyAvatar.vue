@@ -19,9 +19,8 @@ export default {
     width: 160px;
     height: 160px;
     border-radius: 100%;
-    margin: 0 auto;
     overflow: hidden;
-    box-shadow: 1px 4px 12px 2px #828080;
+    box-shadow: 1px 8px 12px #3a3c4c14, 1px 1px 2px #3a3c4c0a;
   }
 
   .img {

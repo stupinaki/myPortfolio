@@ -1,7 +1,7 @@
 <template>
   <div class="description">
-    <div>
-      Привет! Меня зовут Ксения, и я Front-end developer.
+    <div class="text">
+      Привет 👋🏼 Меня зовут Ксения, и я Front-end developer.
       <br>
       <b>Основной стек:</b>
       JS, HTML, CSS.
@@ -39,17 +39,29 @@ export default {
     justify-content: end;
     gap: 20px;
   }
+  .text {
+    font-size: 24px;
+    line-height: 40px;
+  }
   .contacts {
     display: flex;
     gap: 20px;
   }
-  .contactLink {
+    .contactLink {
     text-decoration: none;
-    color: #a8a5a5;
+    font-size: 20px;
+    color: #2c96e8;
   }
   .contactLink:hover {
     transform: scale(1.02);
-    color: #828080;
+    color: #022f52;
+  }
+
+  @media screen and (max-width: 900px) {
+    .text {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 </style>
 
