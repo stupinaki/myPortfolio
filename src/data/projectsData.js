@@ -18,10 +18,10 @@ export const projectsCards = [
     },
     {
         id: 2,
-        projectName: 'Test site',
+        projectName: 'Relvise',
         imgStart: TestSiteStart,
         imgEnd: TestSiteEnd,
-        url: 'https://stupinaki.github.io/testSite/',
+        url: 'https://stupinaki.github.io/Relvise/',
     },
     {
         id: 1,
