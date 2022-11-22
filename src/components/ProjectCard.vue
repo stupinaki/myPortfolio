@@ -1,11 +1,17 @@
 <template>
   <a
       :href="url"
+      target="_blank"
       class="wrapper"
   >
     <slot />
-    <div class="text">
-      {{ text }}
+    <div class="description">
+      <h2 class="header">
+        {{ header }}
+      </h2>
+      <div class="text">
+        {{ text }}
+      </div>
     </div>
   </a>
 </template>
@@ -14,6 +20,10 @@
 export default {
   name: "ProjectCard",
   props: {
+    header: {
+      type: String,
+      required: true,
+    },
     text: {
       type: String,
       required: true,
@@ -30,10 +40,9 @@ export default {
   .wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 100%;
     height: 100%;
-    border-radius: 4px;
+    border-radius: 1.5rem;
     text-decoration: none;
     background-color: #fafafa;
     overflow: hidden;
@@ -41,14 +50,23 @@ export default {
   }
 
   .wrapper:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
+  }
+
+  .description {
+    padding: 16px;
+    text-align: start;
+  }
+  .header {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #000;
   }
 
   .text {
-    padding: 16px;
     font-size: 20px;
-    line-height: 20px;
-    font-weight: bold;
-    color: #000;
+    line-height: 32px;
   }
 </style>

@@ -4,19 +4,27 @@
         <MyAvatar/>
         <MyDescription/>
       </div>
-      <div class="projectCardsContainer">
-        <ProjectCard
-            v-for="projectCard in projectsCards"
-            :key="projectCard.id"
-            :text="projectCard.projectName"
-            :url="projectCard.url"
-        >
-          <ImgWrapper
-              :srcStart="projectCard.imgStart"
-              :srcEnd="projectCard.imgEnd"
-              :alt="projectCard.projectName"
-          />
-        </ProjectCard>
+
+      <div>
+        <h2 class="header">
+          Примеры работ на GitHub pages.
+        </h2>
+        <div class="projectCardsContainer">
+          <ProjectCard
+              v-for="projectCard in projectsCards"
+              :key="projectCard.id"
+              :header="projectCard.projectName"
+              :text="projectCard.description"
+              :url="projectCard.url"
+          >
+            <ImgWrapper
+                :srcStart="projectCard.imgStart"
+                :srcEnd="projectCard.imgEnd"
+                :alt="projectCard.projectName"
+            />
+          </ProjectCard>
+        </div>
+
       </div>
     </div>
 </template>
@@ -52,9 +60,12 @@ export default {
   margin: 0;
   background: linear-gradient(338deg, rgb(44, 150, 232), rgb(255, 255, 255) 50%);
   background-repeat: no-repeat;
-  font-family: Montserrat,serif;
+  font-family: 'Open Sans',serif;
 }
 
+h2 {
+  margin: 0;
+}
 .portfolio {
   display: grid;
   grid-template-columns: 1fr;
@@ -74,6 +85,13 @@ export default {
   grid-template-columns: 1fr 4fr;
   gap: 20px;
 }
+
+.header {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
 
 @media screen and (max-width: 900px) {
   .portfolio {

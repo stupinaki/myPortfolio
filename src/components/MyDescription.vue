@@ -1,25 +1,23 @@
 <template>
-  <div class="description">
-    <div class="text">
+  <div class="wrapper">
+    <h2 class="header">
       Привет 👋🏼 Меня зовут Ксения, и я Front-end developer.
-      <br>
-      <b>Основной стек:</b>
-      JS, HTML, CSS.
-      Пишу на Vue, немного знакома с React.
-      <br>
-      Собрала здесь для удобства несколько своих работ на GitHub pages.
-    </div>
+    </h2>
+    <span class="text">
+       Основной стек: JS, HTML, CSS, Vue.
+    </span>
+
     <div class="contacts">
       <a class="contactLink" href="https://github.com/stupinaki">
         GitHub
       </a>
-      <a class="contactLink"  href="https://spb.hh.ru/resume/2e689aa2ff0378204c0039ed1f327559793445">
+      <a class="contactLink" href="https://spb.hh.ru/resume/2e689aa2ff0378204c0039ed1f327559793445">
         HH
       </a>
-      <a class="contactLink"  href="mailto:k.i.stupina9@gmail.com">
+      <a class="contactLink" href="mailto:k.i.stupina9@gmail.com">
         Почта
       </a>
-      <a class="contactLink"  href="https://www.codewars.com/users/Stupina_ki/completed_solutions">
+      <a class="contactLink" href="https://www.codewars.com/users/Stupina_ki/completed_solutions">
         Codewars
       </a>
     </div>
@@ -33,36 +31,51 @@ export default {
 </script>
 
 <style scoped>
-  .description {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    gap: 20px;
-  }
-  .text {
-    font-size: 24px;
-    line-height: 40px;
-  }
-  .contacts {
-    display: flex;
-    gap: 20px;
-  }
-    .contactLink {
-    text-decoration: none;
-    font-size: 20px;
-    color: #2c96e8;
-  }
-  .contactLink:hover {
-    transform: scale(1.02);
-    color: #022f52;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 20px;
+}
+
+.contacts {
+  display: flex;
+  gap: 20px;
+}
+
+.contactLink {
+  text-decoration: none;
+  font-size: 20px;
+  color: #2c96e8;
+}
+
+.contactLink:hover {
+  transform: scale(1.02);
+  color: #022f52;
+}
+
+.header {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 0;
+}
+
+.text {
+  font-size: 28px;
+  line-height: 32px;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    font-size: 28px;
+    line-height: 32px;
   }
 
-  @media screen and (max-width: 900px) {
-    .text {
-      font-size: 20px;
-      line-height: 30px;
-    }
+  .text {
+    font-size: 24px;
+    line-height: 28px;
   }
+}
 </style>
 
 

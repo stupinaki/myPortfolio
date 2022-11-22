@@ -19,6 +19,7 @@ export const projectsCards = [
         imgStart: ColorsStart,
         imgEnd: ColorsEnd,
         url: 'https://stupinaki.github.io/colors/',
+        description: 'Vue3. Позволяет выбирать и фиксировать цвета',
     },
     {
         id: 3,
@@ -26,6 +27,7 @@ export const projectsCards = [
         imgStart: NotabStart,
         imgEnd: NotabEnd,
         url: 'https://stupinaki.github.io/NOTAB/',
+        description: 'HTML, CSS. Адаптивная верстка.',
     },
     {
         id: 2,
@@ -33,6 +35,7 @@ export const projectsCards = [
         imgStart: TestSiteStart,
         imgEnd: TestSiteEnd,
         url: 'https://stupinaki.github.io/Relvise/',
+        description: 'HTML, CSS. Адаптивная верстка.',
     },
     {
         id: 1,
@@ -40,6 +43,7 @@ export const projectsCards = [
         imgStart: MedicalNotesStart,
         imgEnd: MedicalNotesEnd,
         url: 'https://stupinaki.github.io/medical-notes/#/doctors',
+        description: 'React. Приложение для медицинских заметок, использующее Local Storage.',
     },
     {
         id: 5,
@@ -47,6 +51,8 @@ export const projectsCards = [
         imgStart: UserPostsTypeScriptStart,
         imgEnd: UserPostsTypeScriptEnd,
         url: 'https://stupinaki.github.io/user-posts-typeScript/',
+        description: 'Vue2, TypeScript. Список постов ' +
+            'с возможностью удаления и добавления новых. Используются fetch запросы.',
     },
     {
         id: 4,
@@ -54,6 +60,7 @@ export const projectsCards = [
         imgStart: BeeStart,
         imgEnd: BeeEnd,
         url: 'https://stupinaki.github.io/bee/#',
+        description: 'Пример первого сайта, чтобы увидеть прогресс :)',
     },
 
 ]
