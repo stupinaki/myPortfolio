@@ -68,5 +68,6 @@ export default {
   .text {
     font-size: 20px;
     line-height: 32px;
+    color: #000;
   }
 </style>
