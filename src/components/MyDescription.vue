@@ -32,7 +32,7 @@ export default {
   },
   computed: {
     headerText() {
-      return this.$props.isEnglish ? 'Hi, My name is Ksenia 👋🏼 And I`m a Front-end developer.' : 'Привет 👋🏼 Меня зовут Ксения, и я Front-end developer.';
+      return this.$props.isEnglish ? 'Hi 👋🏼, My name is Ksenia and I`m a Front-end developer.' : 'Привет 👋🏼 Меня зовут Ксения, и я Front-end developer.';
     },
     StackText() {
       return this.$props.isEnglish ? 'Main stack: JS, HTML, CSS, Vue.' : 'Основной стек: JS, HTML, CSS, Vue.';

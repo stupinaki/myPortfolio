@@ -1,40 +1,44 @@
 <template>
-    <div class="portfolio">
-      <div class="aboutMe">
-        <MyAvatar/>
+  <div class="portfolio">
+        <div class="aboutMe">
+          <MyAvatar/>
+          <div>
+            <MyDescription :is-english="isEnglish"/>
+            <div class="buttons">
+              <ChangeLanguageBtn
+                  :is-english="isEnglish"
+                  @changeLanguage="onChangeLanguage"
+              />
+              <ChangeBackgroundBtn
+                  :is-english="isEnglish"
+                  :is-dark="isDark"
+                  @changeBackground="onChangeBackground"
+              />
+            </div>
+          </div>
+        </div>
         <div>
-          <MyDescription :is-english="isEnglish"/>
-          <ChangeLanguageBtn
-              :is-english="isEnglish"
-              class="changeBtn"
-              @changeLanguage="onChangeLanguage"
-          />
+          <h2 class="header">
+            {{ headerText }}
+          </h2>
+          <div class="projectCardsContainer">
+            <ProjectCard
+                v-for="projectCard in projectsCards"
+                :key="projectCard.id"
+                :header="projectCard.projectName"
+                :text="isEnglish ? projectCard.descriptionEnglish: projectCard.description"
+                :textEnglish="projectCard.descriptionEnglish"
+                :url="projectCard.url"
+            >
+              <ImgWrapper
+                  :srcStart="projectCard.imgStart"
+                  :srcEnd="projectCard.imgEnd"
+                  :alt="projectCard.projectName"
+              />
+            </ProjectCard>
+          </div>
         </div>
       </div>
-
-      <div>
-        <h2 class="header">
-          {{ headerText }}
-        </h2>
-        <div class="projectCardsContainer">
-          <ProjectCard
-              v-for="projectCard in projectsCards"
-              :key="projectCard.id"
-              :header="projectCard.projectName"
-              :text="isEnglish ? projectCard.descriptionEnglish: projectCard.description"
-              :textEnglish="projectCard.descriptionEnglish"
-              :url="projectCard.url"
-          >
-            <ImgWrapper
-                :srcStart="projectCard.imgStart"
-                :srcEnd="projectCard.imgEnd"
-                :alt="projectCard.projectName"
-            />
-          </ProjectCard>
-        </div>
-
-      </div>
-    </div>
 </template>
 
 <script>
@@ -44,6 +48,7 @@ import ImgWrapper from "@/components/ImgWrapper.vue";
 import ProjectCard from "@/components/ProjectCard.vue";
 import MyDescription from "@/components/MyDescription.vue";
 import ChangeLanguageBtn from "@/components/ChangeLanguageBtn.vue";
+import ChangeBackgroundBtn from "@/components/ChangeBackgroundBtn.vue";
 
 export default {
   name: 'App',
@@ -53,16 +58,23 @@ export default {
     ProjectCard,
     MyDescription,
     ChangeLanguageBtn,
+    ChangeBackgroundBtn,
   },
   data()  {
     return {
       projectsCards,
       isEnglish: false,
+      isDark: false,
     }
   },
   methods: {
     onChangeLanguage() {
       this.$data.isEnglish = !this.$data.isEnglish;
+    },
+    onChangeBackground() {
+      const bodyElement = document.querySelector("body");
+      bodyElement.style = this.$data.isDark ? "background:#19202d;color:floralwhite" : "background:whitesmoke";
+      this.$data.isDark = !this.$data.isDark;
     }
   },
   computed: {
@@ -79,9 +91,8 @@ export default {
 }
 .body {
   margin: 0;
-  background: linear-gradient(338deg, rgb(44, 150, 232), rgb(255, 255, 255) 50%);
-  background-repeat: no-repeat;
   font-family: 'Open Sans',serif;
+  background-color: whitesmoke;
 }
 
 h2 {
@@ -107,7 +118,9 @@ h2 {
   gap: 20px;
 }
 
-.changeBtn {
+.buttons {
+  display: flex;
+  gap: 12px;
   margin-top: 12px;
 }
 
