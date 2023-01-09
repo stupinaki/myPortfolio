@@ -2,19 +2,27 @@
     <div class="portfolio">
       <div class="aboutMe">
         <MyAvatar/>
-        <MyDescription/>
+        <div>
+          <MyDescription :is-english="isEnglish"/>
+          <ChangeLanguageBtn
+              :is-english="isEnglish"
+              class="changeBtn"
+              @changeLanguage="onChangeLanguage"
+          />
+        </div>
       </div>
 
       <div>
         <h2 class="header">
-          Примеры работ на GitHub pages.
+          {{ headerText }}
         </h2>
         <div class="projectCardsContainer">
           <ProjectCard
               v-for="projectCard in projectsCards"
               :key="projectCard.id"
               :header="projectCard.projectName"
-              :text="projectCard.description"
+              :text="isEnglish ? projectCard.descriptionEnglish: projectCard.description"
+              :textEnglish="projectCard.descriptionEnglish"
               :url="projectCard.url"
           >
             <ImgWrapper
@@ -35,6 +43,7 @@ import MyAvatar from "@/components/MyAvatar.vue";
 import ImgWrapper from "@/components/ImgWrapper.vue";
 import ProjectCard from "@/components/ProjectCard.vue";
 import MyDescription from "@/components/MyDescription.vue";
+import ChangeLanguageBtn from "@/components/ChangeLanguageBtn.vue";
 
 export default {
   name: 'App',
@@ -43,12 +52,24 @@ export default {
     ImgWrapper,
     ProjectCard,
     MyDescription,
+    ChangeLanguageBtn,
   },
   data()  {
     return {
       projectsCards,
+      isEnglish: false,
     }
   },
+  methods: {
+    onChangeLanguage() {
+      this.$data.isEnglish = !this.$data.isEnglish;
+    }
+  },
+  computed: {
+    headerText() {
+      return this.$data.isEnglish ? 'Examples of my works on GitHub pages.' : 'Примеры моих работ на GitHub pages.';
+    },
+  }
 }
 </script>
 
@@ -84,6 +105,10 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 4fr;
   gap: 20px;
+}
+
+.changeBtn {
+  margin-top: 12px;
 }
 
 .header {

@@ -20,6 +20,7 @@ export const projectsCards = [
         imgEnd: ColorsEnd,
         url: 'https://stupinaki.github.io/colors/',
         description: 'Vue3. Позволяет выбирать и фиксировать цвета',
+        descriptionEnglish: 'Vue3. Allows you to select and save colors',
     },
     {
         id: 3,
@@ -28,6 +29,7 @@ export const projectsCards = [
         imgEnd: NotabEnd,
         url: 'https://stupinaki.github.io/NOTAB/',
         description: 'HTML, CSS. Адаптивная верстка.',
+        descriptionEnglish: 'HTML, CSS. Adaptive layout.',
     },
     {
         id: 2,
@@ -36,6 +38,7 @@ export const projectsCards = [
         imgEnd: TestSiteEnd,
         url: 'https://stupinaki.github.io/Relvise/',
         description: 'HTML, CSS. Адаптивная верстка.',
+        descriptionEnglish: 'HTML, CSS. Adaptive layout.',
     },
     {
         id: 1,
@@ -44,6 +47,7 @@ export const projectsCards = [
         imgEnd: MedicalNotesEnd,
         url: 'https://stupinaki.github.io/medical-notes/#/doctors',
         description: 'React. Приложение для медицинских заметок, использующее Local Storage.',
+        descriptionEnglish: 'React. A medical notes app using Local Storage.',
     },
     {
         id: 5,
@@ -51,8 +55,8 @@ export const projectsCards = [
         imgStart: UserPostsTypeScriptStart,
         imgEnd: UserPostsTypeScriptEnd,
         url: 'https://stupinaki.github.io/user-posts-typeScript/',
-        description: 'Vue2, TypeScript. Список постов ' +
-            'с возможностью удаления и добавления новых. Используются fetch запросы.',
+        description: 'Vue2, TypeScript. Список постов с возможностью удаления и добавления новых. Используются fetch запросы.',
+        descriptionEnglish: 'Vue2, Typescript. List of posts with the ability to delete and add new ones. Fetch requests are used.',
     },
     {
         id: 4,
@@ -61,6 +65,7 @@ export const projectsCards = [
         imgEnd: BeeEnd,
         url: 'https://stupinaki.github.io/bee/#',
         description: 'Пример первого сайта, чтобы увидеть прогресс :)',
+        descriptionEnglish: 'Sample of first site to see progress :)',
     },
 
 ]

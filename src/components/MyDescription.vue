@@ -1,10 +1,10 @@
 <template>
   <div class="wrapper">
     <h2 class="header">
-      Привет 👋🏼 Меня зовут Ксения, и я Front-end developer.
+      {{ headerText }}
     </h2>
     <span class="text">
-       Основной стек: JS, HTML, CSS, Vue.
+       {{ StackText }}
     </span>
 
     <div class="contacts">
@@ -15,7 +15,7 @@
         HH
       </a>
       <a class="contactLink" href="mailto:k.i.stupina9@gmail.com">
-        Почта
+        Gmail
       </a>
       <a class="contactLink" href="https://www.codewars.com/users/Stupina_ki/completed_solutions">
         Codewars
@@ -26,7 +26,18 @@
 
 <script>
 export default {
-  name: "MyDescription"
+  name: "MyDescription",
+  props: {
+    isEnglish: Boolean,
+  },
+  computed: {
+    headerText() {
+      return this.$props.isEnglish ? 'Hi, My name is Ksenia 👋🏼 And I`m a Front-end developer.' : 'Привет 👋🏼 Меня зовут Ксения, и я Front-end developer.';
+    },
+    StackText() {
+      return this.$props.isEnglish ? 'Main stack: JS, HTML, CSS, Vue.' : 'Основной стек: JS, HTML, CSS, Vue.';
+    }
+  }
 }
 </script>
 
