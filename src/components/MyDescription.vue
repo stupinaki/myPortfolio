@@ -35,7 +35,7 @@ export default {
       return this.$props.isEnglish ? 'Hi 👋🏼, My name is Ksenia and I`m a Front-end developer.' : 'Привет 👋🏼 Меня зовут Ксения, и я Front-end developer.';
     },
     StackText() {
-      return this.$props.isEnglish ? 'Main stack: JS, HTML, CSS, Vue.' : 'Основной стек: JS, HTML, CSS, Vue.';
+      return this.$props.isEnglish ? 'Main stack: JS, HTML, CSS, Vue, Vuex, Vue-Router' : 'Основной стек: JS, HTML, CSS, Vue, Vuex, Vue-Router.';
     }
   }
 }
