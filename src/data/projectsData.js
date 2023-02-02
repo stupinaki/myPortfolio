@@ -11,6 +11,8 @@ import TestSiteEnd from "@/assets/test-site-end.jpg";
 import ColorsEnd from "@/assets/colors-end.jpg";
 import NotabEnd  from "@/assets/notab-end.jpg";
 import BeeEnd  from "@/assets/bee-end.jpg";
+import AstraLabStart from "@/assets/astralab-start.jpg";
+import AstraLabEnd from "@/assets/astralab-end.jpg";
 
 export const projectsCards = [
     {
@@ -21,6 +23,15 @@ export const projectsCards = [
         url: 'https://stupinaki.github.io/colors/',
         description: 'Vue3. Позволяет выбирать и фиксировать цвета',
         descriptionEnglish: 'Vue3. Allows you to select and save colors',
+    },
+    {
+        id: 7,
+        projectName: 'AstraLab',
+        imgStart: AstraLabStart,
+        imgEnd: AstraLabEnd,
+        url: 'https://stupinaki.github.io/AstraLab/#/',
+        description: 'Vue3, Vue-router. Форма для регистрации  и авторизации пользователя',
+        descriptionEnglish: 'Vue3, Vue-router. User registration and authorization form',
     },
     {
         id: 3,
