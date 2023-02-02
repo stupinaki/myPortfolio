@@ -38,13 +38,10 @@ export default {
 
 <style scoped>
   .wrapper {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     height: 100%;
     border-radius: 1.5rem;
     text-decoration: none;
-    background-color: #fafafa;
     overflow: hidden;
     box-shadow: 1px 8px 12px #3a3c4c14, 1px 1px 2px #3a3c4c0a;
   }
@@ -56,6 +53,8 @@ export default {
   .description {
     padding: 16px;
     text-align: start;
+    background-color: #fafafa;
+    height: 100%;
   }
   .header {
     font-size: 20px;
