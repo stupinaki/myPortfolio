@@ -32,8 +32,8 @@ export const projectsCards = [
         imgStart: WeatherAppStart,
         imgEnd: WeatherAppEnd,
         url: 'https://stupinaki.github.io/weather-app/',
-        description: 'Vue3. Typescript. LocalStorage. Использую openWeatherMap API и определение геолокации пользователя',
-        descriptionEnglish: 'Vue3. Typescript. LocalStorage. Use openWeatherMap API and geolocation detection',
+        description: 'Vue3. Typescript. LocalStorage. Использую Weather API и определение геолокации пользователя',
+        descriptionEnglish: 'Vue3. Typescript. LocalStorage. Use Weather API and geolocation detection',
     },
     {
         id: 7,
