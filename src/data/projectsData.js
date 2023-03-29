@@ -13,6 +13,8 @@ import NotabEnd  from "@/assets/notab-end.jpg";
 import BeeEnd  from "@/assets/bee-end.jpg";
 import AstraLabStart from "@/assets/astralab-start.jpg";
 import AstraLabEnd from "@/assets/astralab-end.jpg";
+import WeatherAppStart from "@/assets/weather-app-start.jpg";
+import WeatherAppEnd from "@/assets/weather-app-end.jpg";
 
 export const projectsCards = [
     {
@@ -23,6 +25,15 @@ export const projectsCards = [
         url: 'https://stupinaki.github.io/colors/',
         description: 'Vue3. Позволяет выбирать и фиксировать цвета',
         descriptionEnglish: 'Vue3. Allows you to select and save colors',
+    },
+    {
+        id: 8,
+        projectName: 'Weather-app',
+        imgStart: WeatherAppStart,
+        imgEnd: WeatherAppEnd,
+        url: 'https://stupinaki.github.io/weather-app/',
+        description: 'Vue3. Typescript. LocalStorage. Использую openWeatherMap API и определение геолокации пользователя',
+        descriptionEnglish: 'Vue3. Typescript. LocalStorage. Use openWeatherMap API and geolocation detection',
     },
     {
         id: 7,
