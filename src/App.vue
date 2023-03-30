@@ -72,9 +72,9 @@ export default {
       this.$data.isEnglish = !this.$data.isEnglish;
     },
     onChangeBackground() {
+      this.$data.isDark = !this.$data.isDark;
       const bodyElement = document.querySelector("body");
       bodyElement.style = this.$data.isDark ? "background:#19202d;color:floralwhite" : "background:whitesmoke";
-      this.$data.isDark = !this.$data.isDark;
     }
   },
   computed: {

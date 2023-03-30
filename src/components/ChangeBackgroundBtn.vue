@@ -19,9 +19,9 @@ export default {
   computed: {
     btnText() {
       if(this.$props.isDark) {
-        return this.$props.isEnglish ? "Dark theme" : "Темная тема";
+        return this.$props.isEnglish ? "Light theme" : "Светлая тема";
       }
-      return this.$props.isEnglish ? "Light theme" : "Светлая тема";
+      return this.$props.isEnglish ? "Dark theme" : "Темная тема";
     }
   },
 
