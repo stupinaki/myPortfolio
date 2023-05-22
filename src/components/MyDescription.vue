@@ -8,16 +8,19 @@
     </span>
 
     <div class="contacts">
-      <a class="contactLink" href="https://github.com/stupinaki">
+      <a class="contactLink" target="_blank" href="https://github.com/stupinaki">
         GitHub
       </a>
-      <a class="contactLink" href="https://spb.hh.ru/resume/2e689aa2ff0378204c0039ed1f327559793445">
-        HH
+      <a v-if="isEnglish" class="contactLink" target="_blank" href="https://drive.google.com/file/d/1aj7X5-l_bwMRbgNAkxb6yU8Ep6-y1VEV/view?usp=sharing">
+        CV
       </a>
-      <a class="contactLink" href="mailto:k.i.stupina9@gmail.com">
+      <a v-if="!isEnglish" class="contactLink" target="_blank" href="https://drive.google.com/file/d/1vl9PU872vkt7WjY8AP_YF5hxYhwIyB-G/view?usp=sharing">
+        Резюме
+      </a>
+      <a class="contactLink" target="_blank" href="mailto:k.i.stupina9@gmail.com">
         Gmail
       </a>
-      <a class="contactLink" href="https://www.codewars.com/users/Stupina_ki/completed_solutions">
+      <a class="contactLink" target="_blank" href="https://www.codewars.com/users/Stupina_ki/completed_solutions">
         Codewars
       </a>
     </div>
