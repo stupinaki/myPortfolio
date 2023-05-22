@@ -15,8 +15,19 @@ import AstraLabStart from "@/assets/astralab-start.jpg";
 import AstraLabEnd from "@/assets/astralab-end.jpg";
 import WeatherAppStart from "@/assets/weather-app-start.jpg";
 import WeatherAppEnd from "@/assets/weather-app-end.jpg";
+import TodoStart from "@/assets/to-do-start.jpg";
+import TodoEnd from "@/assets/to-do-end.jpg";
 
 export const projectsCards = [
+    {
+        id: 9,
+        projectName: 'Todo list',
+        imgStart: TodoStart,
+        imgEnd: TodoEnd,
+        url: 'https://stupinaki.github.io/to-do-list/',
+        description: 'Vue3. LocalStorage. TransitionGroup. Приложение для хранения списка дел',
+        descriptionEnglish: 'Vue3. LocalStorage. TransitionGroup',
+    },
     {
         id: 6,
         projectName: 'Colors',
@@ -50,8 +61,8 @@ export const projectsCards = [
         imgStart: NotabStart,
         imgEnd: NotabEnd,
         url: 'https://stupinaki.github.io/NOTAB/',
-        description: 'HTML, CSS. Адаптивная верстка.',
-        descriptionEnglish: 'HTML, CSS. Adaptive layout.',
+        description: 'HTML, CSS. Адаптивная верстка',
+        descriptionEnglish: 'HTML, CSS. Adaptive layout',
     },
     {
         id: 2,
@@ -59,8 +70,8 @@ export const projectsCards = [
         imgStart: TestSiteStart,
         imgEnd: TestSiteEnd,
         url: 'https://stupinaki.github.io/Relvise/',
-        description: 'HTML, CSS. Адаптивная верстка.',
-        descriptionEnglish: 'HTML, CSS. Adaptive layout.',
+        description: 'HTML, CSS. Адаптивная верстка',
+        descriptionEnglish: 'HTML, CSS. Adaptive layout',
     },
     {
         id: 1,
@@ -68,8 +79,8 @@ export const projectsCards = [
         imgStart: MedicalNotesStart,
         imgEnd: MedicalNotesEnd,
         url: 'https://stupinaki.github.io/medical-notes/#/doctors',
-        description: 'React. Приложение для медицинских заметок, использующее Local Storage.',
-        descriptionEnglish: 'React. A medical notes app using Local Storage.',
+        description: 'React. Приложение для медицинских заметок, использующее Local Storage',
+        descriptionEnglish: 'React. A medical notes app using Local Storage',
     },
     {
         id: 5,
@@ -77,8 +88,8 @@ export const projectsCards = [
         imgStart: UserPostsTypeScriptStart,
         imgEnd: UserPostsTypeScriptEnd,
         url: 'https://stupinaki.github.io/user-posts-typeScript/',
-        description: 'Vue2, TypeScript. Список постов с возможностью удаления и добавления новых. Используются fetch запросы.',
-        descriptionEnglish: 'Vue2, Typescript. List of posts with the ability to delete and add new ones. Fetch requests are used.',
+        description: 'Vue2, TypeScript. Список постов с возможностью удаления и добавления новых. Используются fetch запросы',
+        descriptionEnglish: 'Vue2, Typescript. List of posts with the ability to delete and add new ones. Fetch requests are used',
     },
     {
         id: 4,
