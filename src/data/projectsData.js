@@ -17,8 +17,19 @@ import WeatherAppStart from "@/assets/weather-app-start.jpg";
 import WeatherAppEnd from "@/assets/weather-app-end.jpg";
 import TodoStart from "@/assets/to-do-start.jpg";
 import TodoEnd from "@/assets/to-do-end.jpg";
+import BearingsStart from "@/assets/bearings-start.jpg";
+import BearingsEnd from "@/assets/bearings-end.jpg";
 
 export const projectsCards = [
+    {
+        id: 9,
+        projectName: 'Bearings',
+        imgStart: BearingsStart,
+        imgEnd: BearingsEnd,
+        url: 'https://www.podshipnik-info.ru/',
+        description: 'Commercial project.Vue3. Vue-router, Vite, Vuetify, Vuex. Агригатор по поиску подшипников',
+        descriptionEnglish: 'Коммерческий проект. Vue3. Vue-router, Vite, Vuetify, Vuex. Bearing aggregator',
+    },
     {
         id: 9,
         projectName: 'Todo list',

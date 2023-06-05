@@ -79,7 +79,9 @@ export default {
   },
   computed: {
     headerText() {
-      return this.$data.isEnglish ? 'Examples of my works on GitHub pages.' : 'Примеры моих работ на GitHub pages.';
+      return this.$data.isEnglish
+          ? 'Examples of my commercial projects and educational work on GitHub pages.'
+          : 'Примеры моих коммерческих проектов и учебных работ на GitHub pages.';
     },
   }
 }
