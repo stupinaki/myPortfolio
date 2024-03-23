@@ -44,6 +44,7 @@ export default {
     text-decoration: none;
     overflow: hidden;
     box-shadow: 1px 8px 12px #3a3c4c14, 1px 1px 2px #3a3c4c0a;
+    transition: all 0.5s linear;
   }
 
   .wrapper:hover {

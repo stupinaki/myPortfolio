@@ -39,8 +39,8 @@ export default {
     },
     StackText() {
       return this.$props.isEnglish
-          ? 'Main stack: JS, TypeScript, HTML, CSS, Vue, Vuex, Vue-Router, Vuetify, Git'
-          : 'Основной стек: JS, TypeScript, HTML, CSS, Vue, Vuex, Vue-Router, Vuetify, Git';
+          ? 'Main stack: JS, TS, Vue, Vuex, Vue-Router, Vuetify, React, NextJS'
+          : 'Основной стек: JS, TS, Vue, Vuex, Vue-Router, Vuetify, React, NextJS';
     }
   }
 }
