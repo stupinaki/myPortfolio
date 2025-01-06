@@ -40,7 +40,7 @@ export default {
 
 .imgEnd {
   opacity: 0;
-  transition: opacity 1s;
+  transition: all 0.5s linear;
 }
 
 .imgStart {
@@ -52,7 +52,7 @@ export default {
 }
 
 .imgEnd:hover {
-  transition: opacity 1s;
+  transition: all 0.5s linear;
   opacity: 1;
 }
 

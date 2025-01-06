@@ -30,8 +30,8 @@ export default {
 
 <style scoped>
 .btn {
-  padding: 8px;
-  border-radius: 1.5rem;
+  padding: 8px 12px;
+  border-radius: 12px;
   text-decoration: none;
   background-color: #fafafa;
   overflow: hidden;

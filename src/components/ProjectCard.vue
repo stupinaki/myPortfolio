@@ -40,7 +40,7 @@ export default {
   .wrapper {
     width: 100%;
     height: 100%;
-    border-radius: 1.5rem;
+    border-radius: 16px;
     text-decoration: none;
     overflow: hidden;
     box-shadow: 1px 8px 12px #3a3c4c14, 1px 1px 2px #3a3c4c0a;

@@ -11,10 +11,10 @@
       <a class="contactLink" target="_blank" href="https://github.com/stupinaki">
         GitHub
       </a>
-      <a v-if="isEnglish" class="contactLink" target="_blank" href="https://drive.google.com/file/d/1aj7X5-l_bwMRbgNAkxb6yU8Ep6-y1VEV/view?usp=sharing">
+      <a v-if="isEnglish" class="contactLink" target="_blank" href="https://drive.google.com/file/d/1epbEDgPbI7Aah_psfh_89yf9oVDF_s1E/view">
         CV
       </a>
-      <a v-if="!isEnglish" class="contactLink" target="_blank" href="https://drive.google.com/file/d/1vl9PU872vkt7WjY8AP_YF5hxYhwIyB-G/view?usp=sharing">
+      <a v-if="!isEnglish" class="contactLink" target="_blank" href="https://drive.google.com/drive/folders/11l2fJKTXjOnMvoaXehcV87vNRJKDTtU9">
         Резюме
       </a>
       <a class="contactLink" target="_blank" href="mailto:k.i.stupina9@gmail.com">
@@ -63,10 +63,10 @@ export default {
   text-decoration: none;
   font-size: 20px;
   color: #2c96e8;
+  transition: all 0.5s linear;;
 }
 
 .contactLink:hover {
-  transform: scale(1.02);
   color: #022f52;
 }
 
